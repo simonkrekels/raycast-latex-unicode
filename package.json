@@ -1,0 +1,64 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "latex-unicode",
+  "title": "LaTeX to Unicode",
+  "description": "Type LaTeX math the way you would in the Julia REPL and paste the Unicode result straight into the frontmost app.",
+  "icon": "command-icon.png",
+  "author": "simon",
+  "categories": [
+    "Productivity",
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "paste-latex",
+      "title": "Paste LaTeX as Unicode",
+      "subtitle": "LaTeX",
+      "description": "Convert LaTeX to Unicode and paste it into the frontmost app. Enable it as a fallback command to type \\alpha straight into the root search.",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "latex",
+          "placeholder": "\\alpha^2",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "type-latex",
+      "title": "Type LaTeX",
+      "subtitle": "Unicode",
+      "description": "Live preview and Julia-style completions while you type LaTeX; Enter pastes the Unicode into the frontmost app.",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "latex",
+          "placeholder": "\\alpha^2",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.5.3",
+    "@raycast/utils": "^2.3.2",
+    "unicodeit": "^0.7.5"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
