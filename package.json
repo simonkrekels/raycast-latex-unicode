@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "latex-unicode",
   "title": "LaTeX to Unicode",
-  "description": "Type LaTeX math the way you would in the Julia REPL and paste the Unicode result straight into the frontmost app.",
+  "description": "Type LaTeX math and paste the Unicode result straight into the frontmost app.",
   "icon": "command-icon.png",
   "author": "simon",
   "categories": [
@@ -30,7 +30,7 @@
       "name": "type-latex",
       "title": "Type LaTeX",
       "subtitle": "Unicode",
-      "description": "Live preview and Julia-style completions while you type LaTeX; Enter pastes the Unicode into the frontmost app.",
+      "description": "Live preview and completions while you type LaTeX; Enter pastes the Unicode into the frontmost app.",
       "mode": "view",
       "arguments": [
         {
